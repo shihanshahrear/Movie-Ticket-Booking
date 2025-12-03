@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Login - FilmOn</title>
+    <link rel="stylesheet" href="css/user-login.css">
+    <script src="js/user-login.js" defer></script>
+</head>
+<body>
+<div class="container">
+     <a href="index.html" class="back"><img src="images/button.jpg" alt="back" style="margin: 20px; width: 48px;"></a>
+    <div class="image-side">
+        <img src="images/image1.jpg" alt="Login Image 1">
+    </div>
+    <div class="form-side">
+        <h1>Hello</h1>
+        <h2>Welcome To Film<span>On</span></h2>
+        <h3>User Log in</h3>
+
+        <form id="userLoginForm" action="user-login.php" method="post">
+            <input type="text" name="username" placeholder="User name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Log In</button>
+        </form>
+
+         <a href="admin-register.html" class="link-btn" style="display: flex; justify-content: center; padding: 20px; color: white; border: 1px solid #ffffff; border-radius: 40px;">Create Account</a>
+        
+    </div>
+</div>
+</body>
+</html>
