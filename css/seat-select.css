@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    background: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+.top-bar {
+    display:flex;
+    justify-content:space-between;
+    padding:20px 40px;
+    background:#000;
+}
+.logo span { 
+    color:#ff3b3b; 
+}
+
+nav a { 
+    
+    color:#fff; text-decoration:none; 
+
+}
+
+.main {
+    display: flex;
+    padding: 40px 40px;
+}
+
+.poster img {
+    width: 600px;
+    border-radius: 10px;
+}
+
+.seats-area {
+    margin: 0 40px;
+}
+
+.seats-grid {
+    display: grid;
+    grid-template-columns: repeat(8, 25px);
+    grid-gap: 40px;
+    margin-bottom: 10px;
+}
+
+.seat {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background: #333;
+    cursor: pointer;
+
+}
+.seat.selected { 
+    background: #00c8ff;
+    
+}
+.seat.booked { 
+    background: #777; 
+    cursor: not-allowed; 
+
+}
+
+.summary {
+    margin-left: auto;
+    background:#111;
+    padding: 15px;
+    border-radius:10px;
+    font-size: 22px;
+}
+
+.btn {
+    display:inline-block;
+    margin-top:10px;
+    padding:10px 176px;
+    border-radius:30px;
+    background:#00c8ff;
+    color:#000;
+    text-decoration:none;
+    border:none;
+    cursor:pointer;
+    
+    font-size: 18px;
+    
+    
+}
