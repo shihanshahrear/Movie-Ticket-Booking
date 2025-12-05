@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Sells - FilmOn</title>
+    <link rel="stylesheet" href="css/admin-sales.css">
+    <script src="js/admin-sales.js" defer></script>
+</head>
+<body>
+<header class="top-bar">
+    <div class="logo">Film<span>On</span></div>
+    <nav>
+        <a href="admin-home.html">Home</a>
+        <a href="admin-sales.html">Sells</a>
+        <a href="admin-login.html">Logout</a>
+    </nav>
+</header>
+
+<div class="main">
+    <div class="dates">
+        <button class="date active">Mon 05 Aug</button>
+        <button class="date">Tue 06 Aug</button>
+        <button class="date">Wed 07 Aug</button>
+        <button class="date">Thu 08 Aug</button>
+        <button class="date">Fri 09 Aug</button>
+    </div>
+
+    <div class="content">
+        <div class="poster">
+            <img src="images/avatar-poster.jpg" alt="Avatar Poster">
+        </div>
+
+        <div class="seats-area">
+            <h2>Seat Sells (Read Only)</h2>
+            <div id="seats" class="seats-grid"></div>
+        </div>
+
+        <div class="summary">
+            <h3>AVATAR: THE WAY OF WATER</h3>
+            <p>Category: Sci-Fi / Action</p>
+            <p>Total Seats: <span id="totalSeats">0</span></p>
+            <p>Sold Seats: <span id="soldSeats">0</span></p>
+            <p>Available: <span id="availableSeats">0</span></p>
+            <hr>
+            <p>Ticket Price: $10</p>
+            <p>Total Sell: $<span id="totalSell">0</span></p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
