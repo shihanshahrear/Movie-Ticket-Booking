@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout - FilmOn</title>
+    <link rel="stylesheet" href="css/checkout.css">
+    <script src="js/checkout.js" defer></script>
+</head>
+<body>
+<header class="top-bar">
+    <div class="logo">Film<span>On</span></div>
+</header>
+
+<div class="checkout">
+ <a href="seat-select.html" class="back"><img src="images/button.jpg" alt="back" style="margin: 20px; width: 48px;"></a>
+    </div>
+    <div class="form">
+        <h2>Contact Information</h2>
+        <form id="checkoutForm" action="save-booking.php" method="post">
+            <input type="text" name="first_name" placeholder="First Name" required>
+            <input type="text" name="last_name" placeholder="Last Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="tel" name="phone" placeholder="Phone Number" required>
+            <input type="text" name="card_name" placeholder="Name of card holder" required>
+            <input type="text" name="card_number" placeholder="Card number" required>
+            <input type="text" name="expiry" placeholder="Expiry (MM/YY)" required>
+            <input type="text" name="cvv" placeholder="CVV" required>
+
+            <input type="hidden" name="movie_title" id="movieTitleHidden" value="AVATAR: THE WAY OF WATER">
+            <input type="hidden" name="show_time" id="showTimeHidden" value="15 Aug 2025 - 4:00 PM">
+            <input type="hidden" name="seats" id="seatsHidden">
+            <input type="hidden" name="total_price" id="totalHidden">
+
+            <button type="submit">Pay Card</button>
+   
+        </form>
+   
+    </div>
+
+            <div class="summary">
+        <img src="images/avatar-poster.jpg" alt="Avatar Poster">
+        <h3>AVATAR: THE WAY OF WATER</h3>
+        <p>Tickets: <span id="ticketCount">0</span></p>
+        <p>Total: $<span id="ticketTotal">0</span></p>
+    </div>
+</div>
+</body>
+</html>
