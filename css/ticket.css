@@ -1,0 +1,33 @@
+body {
+    margin:0;
+    background:#000;
+    font-family:Arial,sans-serif;
+}
+.ticket {
+    width:600px;
+    margin:40px auto;
+    display:flex;
+    background:#f4f4f4;
+}
+.left {
+    padding:20px;
+    flex:1;
+}
+.right img {
+    height:100%;
+    width:250px;
+    object-fit:cover;
+}
+#printBtn {
+    margin-top:10px;
+    padding:8px 14px;
+    border:none;
+    background:#00c8ff;
+    border-radius:20px;
+    cursor:pointer;
+}
+.back {
+    display:block;
+    margin-top:8px;
+    text-decoration:none;
+}

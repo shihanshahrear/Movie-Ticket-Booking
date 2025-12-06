@@ -1,0 +1,101 @@
+
+* { 
+    box-sizing: border-box; 
+
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f6f8;
+  color: white;
+  background-color: black;
+}
+
+/* Top bar */
+.top-bar {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  background: black;
+  border-bottom: 1px solid #dddddd;
+}
+.logo { 
+    font-weight: 700;
+    
+ }
+.logo span { color: #e53935; }
+
+/* Back button row */
+.checkout {
+    margin: 12px auto; 
+    padding: 0 8px; 
+}
+
+/* Cards */
+
+
+.form, .summary {
+  background: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+  padding: 16px;
+  max-width: 980px;
+  margin: 8px auto;
+  color: rgb(84, 84, 84);
+}
+
+/* Put form and summary side‑by‑side on wide screens */
+@media (min-width: 900px) {
+  .form, .summary { 
+    display: inline-block; 
+    vertical-align: top; 
+}
+  .form   { 
+    width: 62%; 
+    margin-left: 30px;
+    margin-right: 2%; 
+}
+  .summary{ 
+    width: 32%; 
+    height: 490px;
+}
+}
+
+/* Form styles */
+.form h2 { margin: 0 0 10px; font-size: 18px; }
+
+#checkoutForm input[type="text"],
+#checkoutForm input[type="email"],
+#checkoutForm input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  background: #ffffff;
+  color: #222;
+}
+
+#checkoutForm button {
+  width: 100%;
+  padding: 12px;
+  border: 0;
+  border-radius: 6px;
+  background: #1e88e5;   /* blue button */
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Summary styles */
+.summary img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  display: block;
+  margin-bottom: 10px;
+}
+.summary h3 { margin: 0 0 8px; font-size: 18px; }
+.summary p  { margin: 6px 0; }
